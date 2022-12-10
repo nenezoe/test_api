@@ -17,3 +17,7 @@ or
 yarn run start or npm run start
 
 
+Documentation For Api end point
+https://documenter.getpostman.com/view/18170701/2s8YzTT2RG#91cf441a-f75d-4edc-a58d-3e7d363ace2a
+
+
