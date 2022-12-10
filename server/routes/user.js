@@ -12,7 +12,7 @@ const {
 
 
 
-router.post('/create', createUser);
+router.post('/create', auth, createUser);
 router.get('/get', getUser);
 router.get('/get_1/:id', getUserId);
 router.put('/edit/:id', editUser);

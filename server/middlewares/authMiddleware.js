@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import bcrypt from "bcrypt";
-import User from '../models/User';
+import config from "../config";
 
 const auth = async (req, res, next) => {
   const authheader = req.headers.authorization;
@@ -16,22 +16,13 @@ const auth = async (req, res, next) => {
     'base64').toString().split(':');
   const username = auth_new[0];
   const password = auth_new[1];
-  const user = await User.findOne({ username });
 
-  if (!user) {
-    const err = new Error('You are not authenticated!');
-    res.setHeader('WWW-Authenticate', 'Basic');
-    err.status = 401;
-    return next(err);
-  }
+  console.log("bfghrtgre",   process.env.USERNAME)
 
-  const passwordValidate = await bcrypt.compare(password, hash);
-  
 
-  if (user === user.username && password === passwordValidate) {
+  if (username === config.username && password === config.password) {
     // If Authorized user
-    req.user = user;
-
+    console.log("bfghrtgre")
     next();
   } else {
     const err = new Error('You are not authenticated!');

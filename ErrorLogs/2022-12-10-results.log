@@ -1,0 +1,18 @@
+2022-12-10 14:49:31 [Logs!] error: ReferenceError: user is not defined
+    at _callee$ (C:/MyCodes/Nodejs/test_api/server/middlewares/authMiddleware.js:5:14)
+    at tryCatch (C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\node_modules\regenerator-runtime\runtime.js:62:40)
+    at Generator.invoke [as _invoke] (C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\node_modules\regenerator-runtime\runtime.js:296:22)
+    at Generator.prototype.<computed> [as next] (C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\node_modules\regenerator-runtime\runtime.js:114:21)
+    at step (C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\helpers\asyncToGenerator.js:17:30)
+    at C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\helpers\asyncToGenerator.js:35:14
+    at new Promise (<anonymous>)
+    at new F (C:\MyCodes\Nodejs\test_api\node_modules\core-js\library\modules\_export.js:36:28)
+    at C:\MyCodes\Nodejs\test_api\node_modules\babel-runtime\helpers\asyncToGenerator.js:14:12
+    at auth (C:/MyCodes/Nodejs/test_api/server/middlewares/authMiddleware.js:5:7)
+    at Layer.handle [as handle_request] (C:\MyCodes\Nodejs\test_api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\MyCodes\Nodejs\test_api\node_modules\express\lib\router\index.js:317:13)
+    at C:\MyCodes\Nodejs\test_api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\MyCodes\Nodejs\test_api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\MyCodes\Nodejs\test_api\node_modules\express\lib\router\index.js:275:10)
+    at expressInit (C:\MyCodes\Nodejs\test_api\node_modules\express\lib\middleware\init.js:40:5)
+

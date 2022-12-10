@@ -87,7 +87,7 @@ class userController {
         if (user) {
             return res
             .status(200)
-            .json(responses.success(200, 'User updated  successfully ', user))
+            .json(responses.success(200, 'User gotten  successfully ', user))
         }
   
       //   const updatedUser = await Olist_order_items_dataset.findOneAndUpdate(

@@ -5,8 +5,8 @@ dotenv.config();
 const config = {
   PORT: process.env.PORT,
   DATABASE_URL: process.env.DATABASE_URL,
-  username: process.env.username,
-  password: process.env.password,
+  username: process.env.USERNAME,
+  password: process.env.PASSWORD,
   secretOrKey: process.env.ACCESS_TOKEN_PRIVATE_KEY,
 };
 
